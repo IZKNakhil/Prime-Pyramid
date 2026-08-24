@@ -1,169 +1,100 @@
 # Prime Pyramid
-
-# Prime Pyramid
-
-A Python visualization for exploring prime numbers between consecutive squares.
-
-For each positive integer `n`, row `n` contains the integers from
-
-\[
-n^2
-\]
-
-through
-
-\[
-(n+1)^2-1.
-\]
-
-The geometric center of each row is
-
-\[
-n^2+n,
-\]
-
-and each value \(x\) receives the horizontal coordinate
-
-\[
-k=x-(n^2+n).
-\]
-
-Therefore, every row contains exactly \(2n+1\) integers and is centered at
-\(k=0\).
-
-### Visualization
-
-- **Red + bold:** prime number
-- **Black:** non-prime number
-- **Blue dashed line:** symmetry axis \(k=0\)
-
 ---
+## AE Conjecture
 
-## Prime-Pair Observation
+While exploring the distribution of prime numbers in the Prime Pyramid,
+I observed a recurring pattern involving pairs of primes inside the same row.
 
-While computationally exploring the distribution of primes inside these
-consecutive-square rows, I observed a recurring prime-pair pattern.
+For each row \(n\), define the distance
 
-Define the required distance
-
-\[
+$$
 d(n)=
 \begin{cases}
 n, & \text{if } n \text{ is even},\\
 n+1, & \text{if } n \text{ is odd}.
 \end{cases}
-\]
+$$
 
 Equivalently,
 
-\[
+$$
 d(n)=2\left\lceil\frac{n}{2}\right\rceil.
-\]
+$$
 
-The computational experiments search, in every row, for two primes
-
-\[
-p_1<p_2
-\]
-
-such that both primes lie strictly between the consecutive squares,
-
-\[
-n^2<p_1<p_2<(n+1)^2,
-\]
-
-and their difference is exactly
-
-\[
-p_2-p_1=d(n).
-\]
-
-This observation led me to formulate the following conjecture.
+Computational experiments with the Prime Pyramid led to the following conjecture.
 
 ---
 
-## Conjecture
-
-**Prime-Pair Conjecture for Consecutive Squares**
+### AE Conjecture — Prime Pairs Between Consecutive Squares
 
 For every integer
 
-\[
-n\ge 344,
-\]
+$$
+n \ge 344,
+$$
 
-there exist two prime numbers \(p_1<p_2\) satisfying
+there exist two prime numbers \(p_1<p_2\) in the interval between
+two consecutive squares,
 
-\[
-n^2<p_1<p_2<(n+1)^2
-\]
+$$
+n^2 < p_1 < p_2 < (n+1)^2,
+$$
 
-and
+such that
 
-\[
+$$
 p_2-p_1=
 \begin{cases}
-n, & n\text{ even},\\
-n+1, & n\text{ odd}.
+n, & \text{if } n \text{ is even},\\
+n+1, & \text{if } n \text{ is odd}.
 \end{cases}
-\]
+$$
 
-In compact form,
+In compact form:
 
-\[
+$$
 \boxed{
-\forall n\ge344,\quad
-\exists\,p_1,p_2\in\mathbb P:
-\quad
-n^2<p_1<p_2<(n+1)^2,
-\quad
+\forall n\ge344,\;
+\exists\,p_1,p_2\in\mathbb{P}
+\text{ such that }
+n^2<p_1<p_2<(n+1)^2
+\text{ and }
 p_2-p_1=2\left\lceil\frac n2\right\rceil
 }
-\]
+$$
 
 In other words:
 
-- for every **even** row \(n\), the conjecture predicts a prime pair
-  separated by exactly \(n\);
-- for every **odd** row \(n\), it predicts a prime pair
-  separated by exactly \(n+1\).
+- if \(n\) is **even**, the interval contains a prime pair with distance exactly \(n\);
+- if \(n\) is **odd**, the interval contains a prime pair with distance exactly \(n+1\).
 
 ---
 
-## Computational Status
+### Computational Evidence
 
-This conjecture arose from computational experiments with the Prime Pyramid.
+The AE Conjecture originated from computational experiments with the
+Prime Pyramid.
 
-The calculations provide **computational evidence only**. They do not
-constitute a mathematical proof that the statement holds for every
-\(n\ge344\).
+For each tested row \(n\), the program searches for primes \(p_1,p_2\)
+satisfying the exact distance condition above.
 
-The repository contains the code used to search for such prime pairs and
-to test the conjecture over finite ranges of \(n\).
+A successful computational test for a finite range does **not** constitute
+a proof of the conjecture for all \(n\ge344\). It provides computational
+evidence only.
 
-The verified range should always be stated explicitly, for example:
-
-> No counterexample was found for \(344 \le n \le N\).
-
-where \(N\) is the largest value completely verified by the current
-computation.
+The verified range and the source code used for the computation are
+documented in this repository.
 
 ---
 
-## Originality Note
+### Origin and Prior-Art Note
 
-I arrived at this conjecture independently while experimenting with the
-Prime Pyramid construction.
+The AE Conjecture was formulated independently while experimenting with
+the Prime Pyramid and studying prime pairs between consecutive squares.
 
 At the time of publication, I am not aware of an earlier source stating
-this exact parity-dependent prime-pair conjecture for intervals between
-consecutive squares.
-
-If an earlier reference exists, I would be grateful to learn about it so
-that it can be properly acknowledged and cited.
-
-The purpose of this repository is to document the construction,
-computational experiments, data, and conjecture in a reproducible form.
+this exact conjecture. If an earlier mathematical reference is identified,
+it will be acknowledged and cited here.
 
 
 - ## Prime Pyramid Visualization
