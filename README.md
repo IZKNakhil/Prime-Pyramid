@@ -19,6 +19,26 @@ consecutive squares.
 The geometric representation led to a computational observation about
 prime pairs, which is formulated below as the **AE Conjecture**.
 
+
+## Computational Verification Code
+
+The AE Conjecture is tested in a separate repository containing the
+Python scanner, segmented sieve, deterministic 64-bit Miller-Rabin test,
+test suite, benchmark, and CSV output.
+
+**Verification repository:**
+https://github.com/IZKNakhil/ae-conjecture-test/blob/main/README.md
+
+The scanner checks each row independently and searches for a prime pair
+satisfying the exact distance condition of the AE Conjecture.
+
+The repository also contains tests for the primality routines and the
+Prime Pyramid search logic.
+
+A successful finite computation provides computational evidence only and
+does not constitute a proof for all n >= 344.
+
+
 ---
 
 ## 1. Construction of the Prime Pyramid
