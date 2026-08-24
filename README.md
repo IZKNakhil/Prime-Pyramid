@@ -206,7 +206,9 @@ $$
 lying strictly between the consecutive squares \(n^2\) and \((n+1)^2-1\),
 
 $$
-n^2< p_1 <p_2 < (n+1)^2-1,
+
+n^2< p_1 < p_2 < (n+1)^2-1,
+
 $$
 
 such that
