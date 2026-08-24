@@ -479,8 +479,7 @@ be acknowledged and cited in this repository.
 
 The purpose of this repository is to make the experiments reproducible.
 
-The source code used for the Prime Pyramid visualization and for testing
-the AE Conjecture is included in the repository.
+The source code used for the Prime Pyramid is included in the repository.
 
 Future updates may include:
 
