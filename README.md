@@ -501,7 +501,7 @@ Future updates may include:
 The AE Conjecture is currently a conjecture supported by computational
 experiments.
 
-No proof for all \(n \ge 344\) is claimed.
+No proof for all n >= 344 is claimed.
 
 - ## Prime Pyramid Visualization
 
