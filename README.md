@@ -175,11 +175,7 @@ $$
 then
 
 $$
-p_2-p_1
-=
-P(n,k_2)-P(n,k_1)
-=
-k_2-k_1.
+p_2-p_1 = P(n,k_2)-P(n,k_1) = k_2-k_1.
 $$
 
 Therefore the observation can also be expressed geometrically as
@@ -233,9 +229,7 @@ $$
 Equivalently,
 
 $$
-p_2-p_1
-=
-2\left\lceil\frac{n}{2}\right\rceil.
+p_2-p_1 = 2\left\lceil\frac{n}{2}\right\rceil.
 $$
 
 A compact formulation of the **AE Conjecture** is therefore
