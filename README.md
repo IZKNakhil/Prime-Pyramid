@@ -1,5 +1,14 @@
 # Prime Pyramid
 
+### Relation to Classical Conjectures
+
+The AE Conjecture is stronger than Legendre's Conjecture and, for n ≥ 344, stronger than Oppermann's Conjecture.
+
+Legendre's Conjecture predicts at least one prime between consecutive squares. Oppermann's Conjecture predicts at least one prime on each side of the midpoint between those squares.
+
+The AE Conjecture goes further: it predicts not only the existence of primes in both parts of the interval, but the existence of a prime pair with an exact prescribed distance depending on whether n is even or odd.
+
+Therefore, if the AE Conjecture is true for all n ≥ 344, it would imply the corresponding statements of Oppermann's and Legendre's conjectures for that range.
 A Python visualization and computational experiment for exploring the
 distribution of prime numbers between consecutive squares.
 
