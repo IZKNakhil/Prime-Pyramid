@@ -5,9 +5,14 @@ message: "If you use this software or the Prime Pyramid construction in your wor
 title: "Prime Pyramid"
 type: software
 
-authors:
-  - family-names: Errachdi & Akenkou
-    given-names:  Errachdi
+author1:
+  - family-names: Akenkou 
+    given-names:  Mohamed
+
+
+author2:
+  - family-names: Errachdi 
+    given-names:  Zouhair
 
 abstract: "A Python-based mathematical visualization and computational exploration of prime numbers arranged in rows between consecutive squares."
 
