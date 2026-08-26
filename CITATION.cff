@@ -1,4 +1,3 @@
-```yaml
 cff-version: 1.2.0
 message: "If you use this software or the Prime Pyramid construction in your work, please cite it as below."
 
@@ -11,16 +10,14 @@ authors:
   - given-names: "Zouhair"
     family-names: "Errachdi"
 
-
 abstract: "A Python-based mathematical visualization and computational exploration of prime numbers arranged in rows between consecutive squares."
 
 keywords:
-  - prime numbers
-  - number theory
-  - prime distribution
-  - consecutive squares
-  - mathematical visualization
-  - Python
+  - "prime numbers"
+  - "number theory"
+  - "prime distribution"
+  - "consecutive squares"
+  - "mathematical visualization"
+  - "Python"
 
-license: MIT
-```
+license: "MIT"
